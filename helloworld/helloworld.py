@@ -1,3 +1,4 @@
+from pythonPractice.helloworld.stock import cal_lower, cal_upper
 
 print("hello world")
 
@@ -249,6 +250,56 @@ def cal_upper_lower(price):
 
 print(upper)
 print(lower)
+
+# modules
+
+import stock
+
+print(stock.cal_lower(99900))
+print(stock.cal_upper(99900))
+print(stock.author)
+
+
+
+import time
+
+t = time.time()
+print(t)
+
+t = time.ctime()
+print(t)
+
+cur_time = time.ctime().split(' ')[-2]
+print(cur_time)
+
+for i in range(1):
+    print(i)
+    time.sleep(1)
+
+
+print(time)
+
+print(stock)
+
+import random
+
+print(random)
+
+print(dir(random))
+
+
+import os
+print(os.getcwd())
+
+print(os.listdir())
+
+print(os.listdir("D:\\"))
+
+for x in os.listdir():
+    if x.endswith("py"):
+        print(x)
+
+
 
 
 
