@@ -145,4 +145,77 @@ print(type("hello111" in curr_price))
 print(curr_price["아주"])
 
 
+# if
+
+wikibooks_cur_price = 11000
+
+if wikibooks_cur_price <= 50000:
+    print("Buy 5")
+    print("Buy 6")
+else:
+    print("Not buy")
+
+
+price = 2100
+
+if price < 1000:
+    bid = 1
+elif 1000 <= price < 2000:
+    bid = 2
+elif 2000 <= price < 3000:
+    bid = 2.5
+else:
+    bid = 3
+
+print("bid : ", bid)
+
+
+# for
+
+for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+    print("for : ", i)
+
+
+print(list(range(1, 10)))
+
+
+for i in range(1, 10):
+    print("range : ", i)
+
+
+stocks = ["aa", "bb", "cc"]
+for company in stocks:
+    print("%s is ok " % company, "zzz %d" % 99)
+
+
+stocks = {"aa": 11, "bb": 22, "cc": 33}
+
+for k, v in stocks.items():
+    print("key is %s, value is %s" % (k, v))
+
+
+for k in stocks.keys():
+    print("key %s , value is %s" % (k, stocks[k]))
+
+
+# for
+
+wikibooks = 30000
+cnt = 0
+
+while cnt < 5:
+    cnt += 1
+    wikibooks += wikibooks * 0.3
+
+print("price is %s" % wikibooks)
+
+
+num = 0
+while num <= 10:
+    num += 1
+    if num % 2 == 0:
+        print("even %s" % num)
+    else:
+        print("odd %s" % num)
+
 
