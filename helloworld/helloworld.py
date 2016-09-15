@@ -219,3 +219,36 @@ while num <= 10:
         print("odd %s" % num)
 
 
+# class / function
+# https://wikidocs.net/1045
+print("")
+
+
+def print_ntimes(n):
+    for i in range(n):
+        print("count %s" % i)
+
+print_ntimes(3)
+
+
+def cal_upper( price ):
+    increment = price * 0.3
+    upper_price = price + increment
+    return upper_price
+
+print(cal_upper(price=300))
+
+
+def cal_upper_lower(price):
+    offset = price * 0.3
+    upper = price + offset
+    lower = price - offset
+    return (upper, lower)
+
+(upper, lower) = cal_upper_lower(50000)
+
+print(upper)
+print(lower)
+
+
+
